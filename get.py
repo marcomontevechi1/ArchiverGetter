@@ -95,7 +95,7 @@ class PVGetter:
             end_suffix += "&to={}-{}-{}T{}%3A{}%3A{}Z".format(e[0], e[1], e[2],
                                                             e[3], e[4], e[5])
 
-        self.url = "{}{}{}{}".format(self.archiver, ARCHIVER_INFIX, pv_for_url, begin_suffix, end_suffix)
+        self.url = "{}{}{}{}{}".format(self.archiver, ARCHIVER_INFIX, pv_for_url, begin_suffix, end_suffix)
         
     def getPV(self):
         """
